@@ -1,0 +1,14 @@
+#!/bin/sh
+
+CONFIG="/usr/share/optiswitch"
+
+if [ "$1" = "intel" ]; then
+	gksu -- bash -c "cp $CONFIG/20-intel.conf /etc/X11/xorg.conf.d/20-intel.conf; gksudo prime-select intel"
+	echo "Intel graphic card selected"
+elif [ "$1" = "nvidia" ]; then
+	gksu -- bash -c "rm /etc/X11/xorg.conf.d/20-intel.conf; gksudo prime-select nvidia"
+	echo "Nvidia graphic card selected"
+else
+	echo "Usage:"
+	echo "optiswitch {intel,nvidia}"
+fi

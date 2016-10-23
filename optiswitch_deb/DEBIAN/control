@@ -1,0 +1,9 @@
+Package: optiswitch
+Version: 1.0-vrong
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash,nvidia-settings,gksu
+Maintainer: getvrong@gmail.com
+Description: Script to swtich between Intel graphic card and Nvidia one when using proprietary driver with Optimus shit. Provides an xorg.d config file to enable vsync on Intel card.
+Homepage: https://github.com/Vrong/optiswitch
