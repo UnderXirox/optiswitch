@@ -3,7 +3,7 @@ Script to swtich between Intel graphic card and Nvidia one when using proprietar
 
 ## Installation
 
-Make de debian package with `make`
+Make the debian package with `make`
 Then install the package `sudo dpkg -i optiswitch_deb.deb`
 
 ## Usage
